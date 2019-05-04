@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivJogo"
+        android:layout_width="134dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/smashbros" />
+
+    <TextView
+        android:id="@+id/tvNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Super Mario Odyssey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivJogo"
+        app:layout_constraintTop_toTopOf="@+id/ivJogo" />
+
+    <TextView
+        android:id="@+id/tvAnoLancamento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Lançamento 2018"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvNome"
+        app:layout_constraintTop_toBottomOf="@+id/tvNome" />
+
+    <TextView
+        android:id="@+id/tvDescricao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:maxLines="2"
+        android:text="Super Mario Odyssey traz uma nova evolução no estilo de jogo do bigodudo favorito dos vide-games! Mario embarca em uma nova jornada através de mundos desconhecidos, pulando e correndo por cenários 3D fantásticos no primeiro jogo sandbox da franquia desde Super Mario Sunshine. Parta nesta incrível viagens por mundos expansivos a bordo de uma nave, descubra novos itens, novos movimentos e muito mais! *Imagem meramente ilustrativa*"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvAnoLancamento"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnoLancamento" />
+
+</android.support.constraint.ConstraintLayout>
